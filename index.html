@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Cloud Resume</title>
     <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
         .right-header {
             text-align: right;
-            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
-            font-size: 14px;
             font-style: normal;
         }
         .right-header strong {
             font-size: 26px;
             display: block;
-            margin-bottom: 0px;
+            margin-bottom: 2px; /* tighten spacing */
         }
         .right-header a {
             color: #0000FF;
@@ -24,27 +27,22 @@
         .right-header a:hover {
             text-decoration: underline;
         }
-        .pro-sum {
+        .section {
             text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
+            margin-bottom: 40px; /* space between sections */
         }
-        .pro-sum h1 {
+        .section h1 {
             font-size: 20px;
             text-decoration: underline;
+            margin-bottom: 10px;
         }
-        .tech-skills {
-            text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-        .tech-skills h1 {
-            font-size: 20px;
-            text-decoration: underline;
+        .section ul {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
+
     <address class="right-header">
         <strong>Michael Cloud</strong>
         <a href="mailto:michaelgcloud@icloud.com">michaelgcloud@icloud.com</a><br>
@@ -56,22 +54,24 @@
     
     <hr>
 
-    <div class="pro-sum">
+    <section class="section pro-sum">
         <h1>Professional Summary</h1>
         <p><strong>Adaptable and detail-oriented professional</strong> with a background in finance and hands-on experience in:</p>
         <ul>
             <li><strong>Software testing and quality assurance</strong></li>
             <li><strong>System documentation and internal tool support</strong></li>
-            <li><strong>Data validation and process improvemnt</strong></li>
+            <li><strong>Data validation and process improvement</strong></li>
         </ul>
-        <p>Graduate of the Arkansas Coding Academy's Full Stack Web Development program with 18+ months of programming experience through immersive education and real-world projects. A <strong>quick learner and clear communicator</strong> seeking a long-term opportunity to contribute to high-impact operations in a collaborative, mission driven environment.</p>
-    </div>
+        <p>Graduate of the Arkansas Coding Academy's Full Stack Web Development program with 18+ months of programming experience through immersive education and real-world projects. A <strong>quick learner and clear communicator</strong> seeking a long-term opportunity to contribute to high-impact operations in a collaborative, mission-driven environment.</p>
+    </section>
 
-    <div class="tech-skills">
+    <section class="section tech-skills">
         <h1>Technical Skills</h1>
-        <p><strong>Technical & Analytical:</strong>Software Testing, QA, SQL, Data Reconcilliation, Financial Reporting, Salesforce CRM, Command Line Tools / Terminal Operations</p>
+        <p><strong>Technical & Analytical:</strong> Software Testing, QA, SQL, Data Reconciliation, Financial Reporting, Salesforce CRM, Command Line Tools / Terminal Operations</p>
         <p><strong>Tools & Languages:</strong> Angular, Node.js, MongoDB, Express, GitHub, Postman, Visual Studio, Microsoft Excel, VS Code Terminal, Git / Git Bash</p>
         <p><strong>Professional Strengths:</strong> Problem Solving, Process Documentation, Team Collaboration, Communication, Independent Learning</p>
-    </div>
+    </section>
+
 </body>
 </html>
+
