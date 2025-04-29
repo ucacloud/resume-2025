@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Resume and portfolio of Michael Cloud, a detail-oriented professional in finance, web development, and technical systems.">
+    <meta name="description"
+        content="Resume and portfolio of Michael Cloud, a detail-oriented professional in finance, web development, and technical systems.">
     <title>Michael Cloud | Resume & Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
@@ -86,7 +87,7 @@
             transform: scale(1.05);
         }
 
-        .right-header {
+        /*  .right-header {
             text-align: right;
             font-style: normal;
             margin-bottom: 1.5rem;
@@ -103,7 +104,7 @@
             border-top: 1px solid #888;
             margin: 2rem 0;
         }
-
+*/
         .section {
             text-align: left;
             margin-bottom: 2.5rem;
@@ -132,17 +133,57 @@
         .section ul li {
             margin-bottom: 0.5rem;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4A7C59;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #355C3A;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header .right {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            .button-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
     </style>
 
-<script>
-    window.onload = function () {
-        window.scrollTo(0, 0);
-    };
-</script>
+    <script>
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
 
 </head>
 
 <body>
+    <a href="#top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <div class="button-group">
         <a href="#pro-sum" class="btn">Summary</a>
         <a href="#tech-skills" class="btn">Tech Skills</a>
@@ -152,39 +193,48 @@
         <a href="#volunteer" class="btn">Volunteer</a>
     </div>
 
-    <header class="header">
+    <div id="top" class="header">
         <div class="left">
             <h1>Michael Cloud</h1>
         </div>
         <div class="right">
             <p>501-412-2855 | North Little Rock, AR</p>
             <div class="social-icons">
-                <a href="mailto:michaelgcloud@icloud.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/ucacloud" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/-michael-cloud" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:michaelgcloud@icloud.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/ucacloud" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/-michael-cloud" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </header>
+    </div>
 
     <hr>
 
     <main>
         <section class="section" id="pro-sum">
             <h1>Professional Summary</h1>
-            <p><strong>Adaptable and detail-oriented professional</strong> with a background in finance and hands-on experience in:</p>
+            <p><strong>Adaptable and detail-oriented professional</strong> with a background in finance and hands-on
+                experience in:</p>
             <ul>
                 <li><strong>Software testing and quality assurance</strong></li>
                 <li><strong>System documentation and internal tool support</strong></li>
                 <li><strong>Data validation and process improvement</strong></li>
             </ul>
-            <p>Graduate of the Arkansas Coding Academy's Full Stack Web Development program with 18+ months of programming experience through immersive education and real-world projects. A <strong>quick learner and clear communicator</strong> seeking a long-term opportunity to contribute to high-impact operations in a collaborative, mission-driven environment.</p>
+            <p>Graduate of the Arkansas Coding Academy's Full Stack Web Development program with 18+ months of
+                programming experience through immersive education and real-world projects. A <strong>quick learner and
+                    clear communicator</strong> seeking a long-term opportunity to contribute to high-impact operations
+                in a collaborative, mission-driven environment.</p>
         </section>
 
         <section class="section" id="tech-skills">
             <h1>Technical Skills</h1>
-            <p><strong>Technical & Analytical:</strong> Software Testing, QA, SQL, Data Reconciliation, Financial Reporting, Salesforce CRM, Command Line Tools / Terminal Operations, Familiar with Jira and Confluence</p>
-            <p><strong>Tools & Languages:</strong> Angular, Node.js, MongoDB, Express, GitHub, Postman, Visual Studio, Microsoft Excel, VS Code Terminal, Git / Git Bash</p>
-            <p><strong>Professional Strengths:</strong> Problem Solving, Process Documentation, Team Collaboration, Communication, Independent Learning</p>
+            <p><strong>Technical & Analytical:</strong> Software Testing, QA, SQL, Data Reconciliation, Financial
+                Reporting, Salesforce CRM, Command Line Tools / Terminal Operations, Familiar with Jira and Confluence
+            </p>
+            <p><strong>Tools & Languages:</strong> Angular, Node.js, MongoDB, Express, GitHub, Postman, Visual Studio,
+                Microsoft Excel, VS Code Terminal, Git / Git Bash</p>
+            <p><strong>Professional Strengths:</strong> Problem Solving, Process Documentation, Team Collaboration,
+                Communication, Independent Learning</p>
         </section>
 
         <section class="section" id="education">
@@ -206,9 +256,11 @@
             <p><strong>WhiteRock - </strong><em>Software Engineer Intern</em></p>
             <p><em>Jan 2025 – Mar 2025 | Little Rock, AR </em></p>
             <ul>
-                <li>Conducted software configuration testing and troubleshooting for Salesforce-based client solutions, supporting system optimization and internal tool adoption.</li>
+                <li>Conducted software configuration testing and troubleshooting for Salesforce-based client solutions,
+                    supporting system optimization and internal tool adoption.</li>
                 <li>Managed and documented technical issues within workflow automations and reporting tools.</li>
-                <li>Completed over 50 hours of Salesforce Trailhead Admin training, enhancing understanding of cloud-based system implementations and client support best practices.</li>
+                <li>Completed over 50 hours of Salesforce Trailhead Admin training, enhancing understanding of
+                    cloud-based system implementations and client support best practices.</li>
             </ul>
 
             <p><strong>Centene / WellCare of Arizona - </strong><em>Quality Improvement Specialist (Contract)</em></p>
@@ -223,7 +275,8 @@
             <p><strong>Self-Employed - </strong><em>Handyman/Construction</em></p>
             <p><em>June 2017 – Present | North Little Rock, AR</em></p>
             <ul>
-                <li>Managed residential renovation and construction projects with a focus on quality and timeline adherence.</li>
+                <li>Managed residential renovation and construction projects with a focus on quality and timeline
+                    adherence.</li>
                 <li>Demonstrated self-management, client coordination, and problem-solving on job sites.</li>
             </ul>
 
@@ -231,12 +284,14 @@
             <p><em>Dec 2015 – Dec 2016 | Little Rock, AR</em></p>
             <ul>
                 <li>Supported financial planning and analysis for client portfolios.</li>
-                <li>Built financial models and conducted client consultations to align investment strategies with long-term goals.</li>
+                <li>Built financial models and conducted client consultations to align investment strategies with
+                    long-term goals.</li>
             </ul>
 
             <p><strong>United States Marine Corps - </strong><em>Rifleman / Fire Team Leader</em></p>
             <ul>
-                <li>Led a fire team and maintained accountability of personnel and equipment in high-stress environments.</li>
+                <li>Led a fire team and maintained accountability of personnel and equipment in high-stress
+                    environments.</li>
                 <li>Gained experience in strategic planning, logistics, and mission execution under pressure.</li>
             </ul>
         </section>
@@ -245,9 +300,12 @@
             <h1>Projects</h1>
             <p><strong>MonTypes Web Application</strong></p>
             <ul>
-                <li>Designed and developed a full CRUD web application using Angular, Node.js, MongoDB, and Express.</li>
-                <li>Conducted end-to-end functional testing and data validation to ensure system reliability and user accessibility across devices.</li>
-                <li>Logged over 300 hours of programming work across frontend, backend, and database layers; integrated RESTful APIs and deployed a fully functional application.</li>
+                <li>Designed and developed a full CRUD web application using Angular, Node.js, MongoDB, and Express.
+                </li>
+                <li>Conducted end-to-end functional testing and data validation to ensure system reliability and user
+                    accessibility across devices.</li>
+                <li>Logged over 300 hours of programming work across frontend, backend, and database layers; integrated
+                    RESTful APIs and deployed a fully functional application.</li>
             </ul>
         </section>
 
@@ -256,13 +314,14 @@
             <p><strong>First Pentecostal Church - </strong><em>Video & Outreach Director</em></p>
             <ul>
                 <li>Lead live streaming and video production for online services.</li>
-                <li>Collaborate with AV and production teams to quickly resolve livestream issues, including hardware resets, platform sync delays, and framerate mismatches, ensuring a seamless viewer experience.</li>
+                <li>Collaborate with AV and production teams to quickly resolve livestream issues, including hardware
+                    resets, platform sync delays, and framerate mismatches, ensuring a seamless viewer experience.</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p style="text-align:center; margin-top: 2rem; font-size: 12px; color:#666;">&copy; 2025 Michael Cloud</p>
+        <p style="text-align:center; margin-top: 2rem; font-size: 12px; color:#5d5d5d;">&copy; 2025 Michael Cloud</p>
     </footer>
 </body>
 
